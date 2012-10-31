@@ -1,0 +1,9 @@
+alias n='notecreate.py'
+# magic bash completion
+function notecomplete
+{
+# 'local' can only be used within a function, exclude it if not using a function
+  local cur="${COMP_WORDS[COMP_CWORD]}"
+  COMPREPLY=($(notetopiclist.py $cur))
+}
+complete -F notecomplete -o default n 

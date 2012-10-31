@@ -1,0 +1,6 @@
+Add the directory you check this repository out to to your PATH by adding the following to your ~/.bashrc file
+
+  PATH=$PATH:path_to_directory
+  source .bashrc_notes
+
+You are good to go!
